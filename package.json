@@ -1,0 +1,25 @@
+{
+  "name": "monorepo-pnpm-workspace-base",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev-base": "pnpm run -C packages/app-base dev",
+    "dev-app1": "pnpm run -C packages/app1 dev",
+    "dev-app2": "pnpm run -C packages/app2 dev",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@common/components": "workspace:^",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
